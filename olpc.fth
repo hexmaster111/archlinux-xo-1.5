@@ -79,8 +79,8 @@ visible
    " PD" $set-macro
 
    check-ofw
-
-   " ro root=LABEL=ARCHroot rootdelay=10 ${PD}" expand$ to boot-file
+\ was ro, not sure why, changed to rw and now i can write to the sdcard when i boot
+   " rw root=LABEL=ARCHroot rootdelay=10 ${PD}" expand$ to boot-file
 
 \ Uncomment the next 2 lines to see the command line
 \   ." cmdline is " boot-file type cr
